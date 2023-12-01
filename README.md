@@ -14,7 +14,7 @@ sudo podman build -t ntp/ntp_server:latest -f ntp-server/Containerfile
 ## 3. Custom Config
 
 ```
-nano ntp-server/chrony.conf
+nano ntp_server/chrony.conf
 ```
 
 ## 4. Run Container
