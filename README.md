@@ -31,7 +31,7 @@ sudo podman run -d                       \
 
 ## 5. Testing
 ```
-sudo podman exec chrony -- ntpdate -q $IP
+sudo podman exec chrony ntpdate -q $IP
 ```
 > Note: IP 變數為本機 IP
 
