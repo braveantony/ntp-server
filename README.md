@@ -43,7 +43,7 @@ server 192.168.61.143, stratum 2, offset +0.000029, delay 0.02567
 
 ## 6. Testing From anthor machine
 ```
-sntpc -n 192.168.61.143
+sntpc -n <NTP Server IP>
 ```
 > `sudo apk update; sudo apk add sntpc`
 
