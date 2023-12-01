@@ -19,12 +19,12 @@ nano ntp_server/chrony.conf
 
 ## 4. Run Container
 ```
-sudo podman run -d                  \
+sudo podman run -d                       \
             --name chrony           \
             --network=host          \
             --cap-add SYS_NICE      \
             --cap-add SYS_TIME      \
             --cap-add SYS_RESOURCE  \
-            -v ntp_server/chrony.conf:/etc/chrony/chrony.conf:ro     \
+            -v $PWD/ntp_server/chrony.conf:/etc/chrony/chrony.conf:ro     \
             localhost/ntp/ntp_server
 ```
