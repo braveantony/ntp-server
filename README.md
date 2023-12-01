@@ -3,7 +3,7 @@ NTP Server on Container
 
 ## 1. git clone
 ```
-git clone https://github.com/braveantony/ntp-server.git
+git clone https://github.com/braveantony/ntp_server.git
 ```
 
 ## 2. Build Container Image
@@ -25,6 +25,6 @@ sudo podman run -d                  \
             --cap-add SYS_NICE      \
             --cap-add SYS_TIME      \
             --cap-add SYS_RESOURCE  \
-            -v ntp-server/chrony.conf:/etc/chrony/chrony.conf:ro     \
+            -v ntp_server/chrony.conf:/etc/chrony/chrony.conf:ro     \
             localhost/ntp/ntp_server
 ```
