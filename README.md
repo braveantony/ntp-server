@@ -13,7 +13,7 @@ sudo podman build -t ntp_server:latest -f ntp_server/Containerfile
 
 ## 3. Run Container
 ```
-sudo podman kube play ntp_server.yaml
+sudo podman kube play ntp_server/ntp_server.yaml
 ```
 
 ## 4. Testing From anthor machine
