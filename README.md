@@ -8,7 +8,7 @@ git clone https://github.com/braveantony/ntp_server.git
 
 ## 2. Build Container Image
 ```
-sudo podman build -t ntp/ntp_server:latest -f ntp_server
+sudo podman build -t ntp/ntp_server:latest -f ntp_server/Containerfile
 ```
 
 ## 3. Custom Config
