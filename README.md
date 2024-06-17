@@ -6,12 +6,20 @@ Run NTP Server with Podman Pod
 git clone https://github.com/braveantony/ntp_server.git
 ```
 
-## 2. Build Container Image
+## 2. Edit NTP Configuration
+
+```
+nano ntp_server/Containerfile
+```
+
+- 修改 allow ip 範圍
+
+## 3. Build Container Image
 ```
 sudo podman build -t ntp_server:latest -f ntp_server/Containerfile
 ```
 
-## 3. Run Container
+## 4. Run Container
 ```
 sudo podman kube play ntp_server/ntp_server.yaml
 ```
@@ -27,7 +35,7 @@ ab2fc7e93236  localhost/podman-pause:4.4.4-1680004800              39 seconds ag
 d2a616434c9a  quay.io/hahappyman/ntp_server:latest                 35 seconds ago  Up 35 seconds              chrony-chrony       d709efb8d672  chrony
 ```
 
-## 4. Testing From anthor machine
+## 5. Testing From anthor machine
 ```
 sntpc -n <NTP Server IP>
 ```
