@@ -6,7 +6,7 @@ metadata:
   name: chrony
 spec:
   containers:
-  - image: quay.io/hahappyman/ntp_server:latest
+  - image: localhost/ntp_server:latest
     name: chrony
     securityContext:
       capabilities:
